@@ -1,3 +1,25 @@
+import Chips from "../Chips";
+
+interface Links {
+  title: string,
+  url: string,
+}
+
+const links: Links[] = [
+  {
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/mateus-do-bit",
+  },
+  {
+    title: "GitHub",
+    url: "https://github.com/meu-bem",
+  },
+  {
+    title: "Email",
+    url: "mailto:a.mateussm1.5@gmail.com"
+  }
+]
+
 const Info = () => (
   <div
     style={{
@@ -13,17 +35,44 @@ const Info = () => (
       }}
     />
     <span
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      gap: ".5rem",
-    }}
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: ".5rem",
+      }}
     >
       <h1>Mateus Santos</h1>
-      <h2>Software Analyst</h2>
-      <a href="https://www.linkedin.com/company/instituto-de-pesquisas-eldorado">
-        <h3>Instituto de Pesquisas Eldorado</h3>
-      </a>
+      <h2
+        style={{
+          fontSize: "2rem",
+          color: "rgba(0, 0, 0, .4)"
+        }}
+      >Software Analyst | @Instituto de Pesquisas Eldorado</h2>
+      <span
+        style={{
+          display: "flex",
+          gap: ".5rem",
+          flexWrap: "wrap",
+        }}
+      >
+        <Chips />
+      </span>
+      <p
+        style={{
+          display: "flex",
+          gap: ".5rem",
+        }}
+      >
+        {links.map((link, index) => (
+          <>
+            <a key={index} target="_blank" href={link.url} rel="noopener noreferrer">
+              {link.title}
+            </a>
+            {index < links.length - 1 && "|"}
+          </>
+        ))}
+
+      </p>
     </span>
   </div>
 )

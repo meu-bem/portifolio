@@ -1,19 +1,20 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #008080;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #008080;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
 }
 
 p {
-    font-size: medium;
+  font-size: medium;
 }

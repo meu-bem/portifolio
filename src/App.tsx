@@ -15,6 +15,15 @@ function App() {
       <Education />
       <PracticeExperience />
       <VoluteerExperience />
+      <p
+        className="status-bar-field"
+        style={{
+          width: "max-content",
+          padding: 8,
+        }}
+      >
+        Powered by <a target='_blank' href="https://jdan.github.io/98.css">98.css</a>
+      </p>
     </Window>
   )
 }

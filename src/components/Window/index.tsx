@@ -5,7 +5,7 @@ interface WindowProps {
 }
 
 const Window = ({
-  barTitle = "A Window With Stuff In It",
+  barTitle = "What are you looking for?",
   children,
   style,
 }: WindowProps) => (
@@ -27,7 +27,7 @@ const Window = ({
       <div
         className="window-body"
         style={{
-          padding: "2rem 4rem",
+          padding: "2rem 12rem",
           display: "flex",
           flexDirection: "column",
           gap: "2rem",
