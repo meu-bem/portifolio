@@ -3,6 +3,7 @@ import AboutMe from './components/AboutMe'
 import Education from './components/Education'
 import Info from './components/Info'
 import PracticeExperience from './components/PracticeExperience'
+import Projects from './components/Projects'
 import VoluteerExperience from './components/VoluteerExperience'
 import Window from './components/Window'
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <Window>
       <Info />
+      <Projects />
       <AboutMe />
       <Education />
       <PracticeExperience />
